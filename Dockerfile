@@ -28,3 +28,5 @@ RUN python -m venv /py && \
 ENV PATH="/scripts:/py/bin:$PATH"
 
 USER app
+
+CMD ["run.sh"]

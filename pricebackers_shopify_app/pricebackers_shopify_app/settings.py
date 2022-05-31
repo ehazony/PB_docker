@@ -35,6 +35,7 @@ XS_SHARING_ALLOWED_METHODS = ['POST', 'GET', 'PUT']
 # Application definition
 
 INSTALLED_APPS = [
+    "pricebackers_shopify_app",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -111,6 +112,11 @@ DATABASES = {
 }
 
 
+STATIC_URL = '/static/static/'
+MEDIA_URL = '/static/media/'
+MEDIA_ROOT = '/vol/web/media'
+STATIC_ROOT = '/vol/web/static'
+
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -147,7 +153,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
 
 
 EMAIL_USE_TLS = True

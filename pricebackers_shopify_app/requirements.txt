@@ -13,5 +13,5 @@ dj_rest_auth==2.2.4
 django-allauth==0.50.0
 django-cors-headers
 python-decouple==3.6
-psycopg2
+psycopg2>=2.8.6,<2.9
 uWSGI>=2.0.19.1,<2.1
